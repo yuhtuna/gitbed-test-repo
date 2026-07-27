@@ -3,7 +3,7 @@
 
 // Kame_PDB Hardware Configurations
 #define VCC3SW_PIN P1
-#define ESC_EN_PIN P2
+#define ESC_EN_PIN P12
 #define INA_SDA_PIN P4
 #define INA_SCL_PIN P5
 
