@@ -1,0 +1,10 @@
+// Auto-generated Zephyr DeviceTree Overlay by GitBed
+/ {
+    leds {
+        compatible = "gpio-leds";
+        ina_sda_led: ina_sda {
+            gpios = <&gpio4 7 GPIO_ACTIVE_HIGH>;
+            label = "System Status LED";
+        };
+    };
+};
