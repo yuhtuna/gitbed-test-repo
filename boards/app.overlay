@@ -2,8 +2,8 @@
 / {
     leds {
         compatible = "gpio-leds";
-        ina_sda_led: ina_sda {
-            gpios = <&gpio6 7 GPIO_ACTIVE_HIGH>;
+        esc_en_led: esc_en {
+            gpios = <&gpio5 7 GPIO_ACTIVE_HIGH>;
             label = "System Status LED";
         };
     };
