@@ -1,6 +1,11 @@
 // Auto-generated Zephyr DeviceTree Overlay by GitBed
 / {
     leds {
+        ina_sda_led: ina_sda {
+            gpios = <&gpio3 7 GPIO_ACTIVE_HIGH>;
+            label = "System Status LED";
+        };
+
         compatible = "gpio-leds";
         esc_en_led: esc_en {
             gpios = <&gpio1 12 GPIO_ACTIVE_HIGH>;
