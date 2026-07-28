@@ -9,3 +9,12 @@ void init_gpio_esc_en() {
     gpio_init.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(GPIOB, &gpio_init);
 }
+
+void init_gpio_ina_sda() {
+    GPIO_InitTypeDef gpio_init = {0};
+    gpio_init.Pin = INA_SDA_PIN;
+    gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
+    gpio_init.Pull = GPIO_NOPULL;
+    gpio_init.Speed = GPIO_SPEED_FREQ_HIGH;
+    HAL_GPIO_Init(GPIOB, &gpio_init);
+}
